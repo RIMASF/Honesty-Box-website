@@ -1,29 +1,41 @@
+# 📦 Digital Honesty Box
 
-Digital Honesty Box
 An Arabic journaling app for daily honest reflections. Get a new question each day, write your answer, and track your sincerity over time.
 
-How to Run:
-bash
+## 🚀 Quick Start
+
+```bash
 npm install
 npm run dev
 Then open: http://localhost:4000
 
-Features:
-✅ 100 Arabic questions
+✨ Features
+✅ 100+ Arabic questions - Deep, thought-provoking prompts
 
-✅ Secure login/register
+✅ Secure login/register - JWT authentication with bcrypt
 
-✅ Track honesty score
+✅ Track honesty score - Automatic sincerity analysis
 
-✅ View all past answers
+✅ View all past answers - Complete timeline of reflections
 
-✅ Beautiful design
+✅ Beautiful design - Glassmorphism Arabic RTL interface
 
-Tech:
-Frontend: HTML, CSS, JavaScript
+🛠 Tech Stack
+Frontend: HTML5, CSS3, JavaScript (ES6+)
 
-Backend: Node.js, Express, MongoDB
+Backend: Node.js, Express.js, MongoDB
 
-Auth: JWT, bcrypt
+Authentication: JWT, bcrypt
 
-Perfect for: Daily self-reflection • Building honesty habits • Arabic journaling
+Database: MongoDB with Mongoose ODM
+
+🎯 Perfect For
+Daily self-reflection in Arabic
+
+Building honesty habits
+
+Personal journaling and growth
+
+Arabic language practice
+
+Mental wellness through writing
