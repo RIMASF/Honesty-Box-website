@@ -1,3 +1,4 @@
+
 Digital Honesty Box
 An Arabic journaling app for daily honest reflections. Get a new question each day, write your answer, and track your sincerity over time.
 
