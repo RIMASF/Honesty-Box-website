@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>تسجيل الدخول | Digital Honesty Box</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- CSS الخاص فيك -->
+  <link rel="stylesheet" href="webStyle.css">
+  <meta name="description" content="Digital Honesty Box — موقع يومي يعرض سؤال للاعترافات الصادقة.">
+  <meta name="keywords" content="honesty, diary, journal, web app">
+  <meta name="author" content="Team CS346">
+</head>
+<body>
+<div class="main-wrapper d-flex flex-column">
+
+  <!-- Navbar بسيط -->
+  <nav class="navbar navbar-expand-md navbar-dark navbar-custom px-3 px-md-5">
+    <a class="navbar-brand d-flex align-items-center" href="question.html">
+      <span>H</span>
+      <span>Honesty Box</span>
+    </a>
+    <div class="ms-auto d-flex gap-3">
+      <a href="profile.html" class="nav-link">الملف الشخصي</a>
+      <a href="login.html" class="nav-link active">تسجيل الدخول</a>
+      <a href="question.html" class="nav-link">سؤال اليوم</a>
+      <a href="timeline.html" class="nav-link">سجل الاعترافات</a>
+    </div>
+  </nav>
+
+  <main class="container flex-fill d-flex justify-content-center align-items-center py-4">
+    <div class="col-md-5">
+      <div class="card-glass p-4">
+        <h1 class="h5 mb-3 text-center">تسجيل الدخول</h1>
+
+        <form>
+          <div class="mb-3">
+            <label class="form-label" for="email">البريد الإلكتروني</label>
+            <input type="email" id="email" class="form-control" placeholder="name@example.com">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label" for="password">كلمة المرور</label>
+            <input type="password" id="password" class="form-control" placeholder="••••••••">
+          </div>
+
+          <button type="submit" id="login-btn" class="btn btn-accent w-100 mb-2">
+            دخول
+          </button>
+
+          <p class="text-center small mb-0">
+            ما عندك حساب؟
+            <a href="register.html" class="link-soft">سجّلي هنا</a>
+          </p>
+        </form>
+      </div>
+    </div>
+  </main>
+</div>
+<footer class="text-center py-3 mt-4">
+  <p class="footer-text">Digital Honesty Box © 2025 — Developed by Team 6</p>
+</footer>
+<script src="auth.js"></script>
+</body>
+</html>

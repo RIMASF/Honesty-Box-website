@@ -1,0 +1,221 @@
+/* ------------------------------
+   GLOBAL RESET
+------------------------------ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Tajawal", sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #FFFFFF 0%, #FDF2F8 35%, #E0F7FF 100%);
+  color: #283554;
+}
+
+/* خلفية ناعمة فيها pattern خفيف */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: url("https://www.transparenttextures.com/patterns/cubes.png");
+  opacity: 0.12;
+  pointer-events: none;
+}
+
+/* ------------------------------
+   NAVBAR
+------------------------------ */
+.navbar-custom {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 153, 200, 0.35);
+}
+
+.navbar-custom .nav-link {
+  color: #4A5568 !important;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+.navbar-custom .nav-link:hover {
+  color: #FF5DA2 !important;
+}
+
+.navbar-custom .nav-link.active {
+  color: #FF5DA2 !important;
+  font-weight: 600;
+  text-shadow: 0 0 6px rgba(255, 153, 200, 0.5);
+}
+
+.navbar-brand span:first-child {
+  background: linear-gradient(135deg, #FFC8DD, #AEE4FF);
+  padding: 0.35rem 0.58rem;
+  border-radius: 50%;
+  color: #283554;
+  font-weight: 700;
+  margin-left: 8px;
+  box-shadow: 0 0 12px rgba(255, 110, 169, 0.4);
+}
+
+/* ------------------------------
+   CARDS (Glass Soft Pastel)
+------------------------------ */
+.card-glass {
+  background: rgba(255, 255, 255, 0.55);
+  border-radius: 1rem;
+  padding: 22px;
+  border: 1px solid rgba(255, 153, 200, 0.3);
+  backdrop-filter: blur(16px);
+  box-shadow: 0 8px 20px rgba(255, 182, 193, 0.25);
+  transition: 0.25s;
+}
+
+.card-glass:hover {
+  border-color: #FF99C8;
+  box-shadow: 0 0 18px rgba(255, 153, 200, 0.4);
+}
+
+.card-glass-light {
+  background: rgba(255, 255, 255, 0.45);
+  border-radius: 1rem;
+  padding: 18px;
+  border: 1px solid rgba(174, 228, 255, 0.35);
+  backdrop-filter: blur(12px);
+}
+
+/* ------------------------------
+   INPUTS
+------------------------------ */
+.form-control,
+textarea {
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(255, 153, 200, 0.35);
+  color: #283554 !important;
+  border-radius: 0.7rem;
+}
+
+.form-control:focus,
+textarea:focus {
+  border-color: #4EA8DE;
+  background: #FFFFFF;
+  box-shadow: 0 0 0 0.15rem rgba(100, 180, 255, 0.35);
+}
+
+::placeholder {
+  color: #94A3B8 !important;
+}
+
+/* ------------------------------
+   BUTTONS
+------------------------------ */
+.btn-accent {
+  background: linear-gradient(135deg, #FF99C8, #AEE4FF);
+  color: #283554;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.65rem;
+  transition: 0.22s ease;
+}
+
+.btn-accent:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.06);
+  box-shadow: 0 0 16px rgba(255, 153, 200, 0.45);
+}
+
+.btn-blue {
+  background: linear-gradient(135deg, #4EA8DE, #AEE4FF);
+  color: #FFFFFF;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.65rem;
+}
+
+.btn-blue:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 16px rgba(100, 180, 255, 0.4);
+}
+
+/* ------------------------------
+   AVATAR
+------------------------------ */
+.avatar-circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #FFC8DD, #AEE4FF);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #283554;
+  font-weight: 800;
+  font-size: 1.5rem;
+  box-shadow: 0 0 12px rgba(255, 153, 200, 0.35);
+}
+
+/* ------------------------------
+   TIMELINE
+------------------------------ */
+#timeline-container .timeline-card {
+  background: rgba(255, 255, 255, 0.65);
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid rgba(174, 228, 255, 0.4);
+  transition: 0.25s;
+}
+
+#timeline-container .timeline-card:hover {
+  background: rgba(255, 255, 255, 0.85);
+  border-color: #FF99C8;
+  transform: translateY(-3px);
+  box-shadow: 0 0 18px rgba(174, 228, 255, 0.4);
+}
+
+.timeline-date {
+  font-size: 0.8rem;
+  color: #6B7280;
+}
+
+.timeline-question {
+  color: #FF5DA2;
+  font-weight: 600;
+}
+
+.timeline-answer {
+  color: #283554;
+}
+
+/* ------------------------------
+   PROFILE BOXES
+------------------------------ */
+.profile-stat {
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(255, 182, 193, 0.35);
+  border-radius: 12px;
+  padding: 14px;
+  color: #283554;
+}
+
+.profile-stat span {
+  color: #FF5DA2;
+  font-weight: bold;
+}
+
+/* ------------------------------
+   FOOTER
+------------------------------ */
+.footer-text {
+  color: #6B7280;
+  font-size: 0.85rem;
+}
+
+/* ------------------------------
+   MOBILE
+------------------------------ */
+@media (max-width: 576px) {
+  .card-glass, .card-glass-light {
+    padding: 16px;
+  }
+}
